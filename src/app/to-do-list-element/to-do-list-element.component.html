@@ -1,1 +1,6 @@
-<p>to-do-list-element works!</p>
+<div class="ToDoElement">
+    <h4>{{item.id}}.  {{item.name}}</h4>
+    <button type="button" class="btn btn-danger delete-btn" (click)="DeletePress()">Delete</button>
+    <p class="ElementTime">{{item.date}} {{item.time}} </p>
+    
+</div>

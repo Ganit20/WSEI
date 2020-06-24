@@ -1,0 +1,17 @@
+.ToDoElement {
+    padding: 5px;
+    background-color: lightblue;
+    border: gray 2px solid;
+    margin: 2px;
+
+}
+.ElementTime {
+    font-weight: lighter;
+    width: 70%;
+}
+h4 {
+    width: 70%;
+}
+.delete-btn {
+    float: right;
+}
