@@ -1,0 +1,16 @@
+.videoElement {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:1280px;
+   height:720px; 
+}
+@media only screen and (max-width: 620px) {
+  .videoElement {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+   height:auto; 
+}
+}

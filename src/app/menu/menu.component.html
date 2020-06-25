@@ -1,6 +1,16 @@
-<div class="main-menu-element">
-    <button class="main-menu-button" (click) = "SiteChange(0);">Main Page</button>
+<button class="OpenMenuBtn" (click)="openMenu()" id="showMenuButton">Open</button>
+<div class="main-menu-element" id="mMenuElement">
+    <button class="main-menu-button hideMenuBtn" (click)="hideMenu()" id="hideMenuButton">Close</button>
+    <!-- <button class="main-menu-button" (click) = "SiteChange(0);">Main Page</button>
     <button class="main-menu-button" (click) = "SiteChange(1);">Todo list</button>
     <button class="main-menu-button" (click) = "SiteChange(2);">Video</button>
-    <button class="main-menu-button" (click) = "SiteChange(3);">About</button>
+    <button class="main-menu-button" (click) = "SiteChange(3);">About</button> -->
+    <a href="#" id="Site0" class="main-menu-button" (click) = "SiteChange(0);"> Main Page</a>
+
+    <a href="#" id="Site1" class="main-menu-button" (click) = "SiteChange(1);"> Todo list</a>
+
+    <a href="#" id="Site2" class="main-menu-button" (click) = "SiteChange(2);"> Video</a>
+      
+    <a href="#" id="Site3" class="main-menu-button" (click) = "SiteChange(3);"> About</a>
+    
 </div>

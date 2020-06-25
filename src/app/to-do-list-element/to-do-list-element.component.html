@@ -1,6 +1,16 @@
 <div class="ToDoElement">
+<div id="showElement" >
     <h4>{{item.id}}.  {{item.name}}</h4>
     <button type="button" class="btn btn-danger delete-btn" (click)="DeletePress()">Delete</button>
-    <p class="ElementTime">{{item.date}} {{item.time}} </p>
+    <button type="button" class="btn btn-primary delete-btn" (click)="EditPress()">Edit</button>
+    <p class="ElementTime">{{item.date}} | {{item.time}} </p>
+    
+    
+</div>
+<div id="editElement"  style="display:none;">
+     <input type="text" [(ngModel)]="item.name">
+    <button type="button" class="btn btn-danger delete-btn" (click)="DonePrees()">Done</button>
+    <p class="ElementTime"><input type="text" [(ngModel)]="item.date"> <input type="text" [(ngModel)]="item.time"></p>
+    
     
 </div>

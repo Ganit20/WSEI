@@ -9,6 +9,7 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { VideoComponent } from './video/video.component';
 import { AboutComponent } from './about/about.component';
 import { ToDoListElementComponent } from './to-do-list-element/to-do-list-element.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,11 @@ import { ToDoListElementComponent } from './to-do-list-element/to-do-list-elemen
     VideoComponent,
     AboutComponent,
     ToDoListElementComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

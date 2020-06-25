@@ -25,8 +25,12 @@ export class ToDoListComponent  {
   }
   OnElementDelete(id:number) {
     this.toDoArray.splice(this.toDoArray.indexOf(this.toDoArray.find(x=>x.id==id)),1);
+    id=1;
+    this.toDoArray.forEach(element => {
+      element.id=id;
+      id++;
+    });
   }
-    
    }
 
 
