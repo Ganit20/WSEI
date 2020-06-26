@@ -17,11 +17,15 @@ export class ToDoListComponent  {
       item.date=(<HTMLInputElement>document.getElementById('todoDate')).value.toString();
       item.time=(<HTMLInputElement>document.getElementById('todoTime')).value.toString();
     if(item.name=="" || item.date=="" || item.time==""){
-      alert("Fields cannot be empty")
+      alert("Fields cannot be empty");
       return;}
+      if(this.toDoArray.some(x=>x.name==item.name)) {
+        alert("This name is already taken");
+        return;
+      }
     this.toDoArray.push(item); 
     item.id=this.toDoArray.length;
-  
+    (<HTMLInputElement>document.getElementById('todoName')).value = "";
   }
   OnElementDelete(id:number) {
     this.toDoArray.splice(this.toDoArray.indexOf(this.toDoArray.find(x=>x.id==id)),1);

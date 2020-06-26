@@ -21,14 +21,15 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/video"
             ],
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
-              "./src/app/JS/menuScript.js"
+              "src/app/JS/menuScript.js"
             ]
           },
           "configurations": {

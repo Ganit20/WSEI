@@ -10,8 +10,8 @@ import { IToDoElement } from '../ito-do-element';
 export class ToDoListElementComponent implements OnInit {
   @Input() item:IToDoElement;
   ngOnInit() {
-    (<HTMLDivElement>document.getElementById('showElement')).id = 'showElement'+this.item.id;
-    (<HTMLDivElement>document.getElementById('editElement')).id = 'editElement'+this.item.id;
+    (<HTMLDivElement>document.getElementById('showElement')).id = 'showElement'+this.item.name;
+    (<HTMLDivElement>document.getElementById('editElement')).id = 'editElement'+this.item.name;
   }
   constructor() { 
     
@@ -22,10 +22,10 @@ export class ToDoListElementComponent implements OnInit {
    this.DeleteElement.emit(this.item.id);
   }
   EditPress() {
-    (<HTMLDivElement>document.getElementById('editElement'+this.item.id)).setAttribute("style", "display:block;");
+    (<HTMLDivElement>document.getElementById('editElement'+this.item.name)).setAttribute("style", "display:block;");
   }
   DonePrees(){
-    (<HTMLDivElement>document.getElementById('editElement'+this.item.id)).setAttribute("style", "display:none;");
+    (<HTMLDivElement>document.getElementById('editElement'+this.item.name)).setAttribute("style", "display:none;");
 }
   
 }
