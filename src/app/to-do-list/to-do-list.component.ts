@@ -10,12 +10,12 @@ import { ThrowStmt } from '@angular/compiler';
  
 export class ToDoListComponent  {
    toDoArray:Array<IToDoElement> = new Array();
-   AddElement() {
+   AddElement(name:HTMLInputElement,date:HTMLInputElement,time:HTMLInputElement) {
      
     var item:IToDoElement = new IToDoElement();
-      item.name=(<HTMLInputElement>document.getElementById('todoName')).value;
-      item.date=(<HTMLInputElement>document.getElementById('todoDate')).value.toString();
-      item.time=(<HTMLInputElement>document.getElementById('todoTime')).value.toString();
+      item.name=name.value;
+      item.date=date.value;
+      item.time=time.value;
     if(item.name=="" || item.date=="" || item.time==""){
       alert("Fields cannot be empty");
       return;}

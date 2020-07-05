@@ -1,8 +1,8 @@
 <div class="inputForm">
-    <input class="inputFormElement" id="todoName" type="text"/>
-    <input class="inputFormElement" id="todoDate" type="date"/>
-    <input class="inputFormElement" id="todoTime" type="time"/>
-    <button (click)="AddElement()" class="btn btn-success btn-lg inputFormElement">Add</button>
+    <input class="inputFormElement" id="todoName" type="text" #NameInput/>
+    <input class="inputFormElement" id="todoDate" type="date" #DateInput/>
+    <input class="inputFormElement" id="todoTime" type="time" #TimeInput/>
+    <button (click)="AddElement(NameInput,DateInput,TimeInput)" class="btn btn-success btn-lg inputFormElement">Add</button>
     <app-to-do-list-element *ngFor="let i of toDoArray" [item]="i" (DeleteElement)="OnElementDelete($event)"> </app-to-do-list-element> 
 </div>
 

@@ -21,7 +21,6 @@ return {
   }
   },
   closeNav:function() {
-    document.getElementById("hideMenuButton").style.display = "none";
     document.getElementById("showMenuButton").style.display = "block";
   
   var mainMenuElement = document.getElementById("mMenuElement")
@@ -40,7 +39,6 @@ return {
   
   },
   setStandardNav:function() {
-    document.getElementById("hideMenuButton").style.display = "none";
     document.getElementById("showMenuButton").style.display = "none";
     document.getElementById("mMenuElement").style.display = "block";
   
